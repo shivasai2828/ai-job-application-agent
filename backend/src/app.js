@@ -7,6 +7,7 @@ const env = require('./config/env');
 const { notFound, errorHandler } = require('./middlewares/errorHandler');
 
 const app = express();
+// just adding logs 
 
 app.use(helmet());
 app.use(cors({ origin: env.clientUrl }));
